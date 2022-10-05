@@ -1,0 +1,246 @@
+    /* Fontes */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@600&family=Titan+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Asap:wght@600&family=Noto+Sans:wght@600&family=Titan+One&display=swap');
+    /* Detalhes */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+    /* Geral */
+body{
+    background-color: rgb(206, 206, 206);
+    font-size: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 14px;
+}
+    /* Fundo Cinza Claro */
+.principal{
+    display: flex;
+    padding-left: 35px;
+}
+    /* Background */
+.background{
+    background-image: url(../components/images/background1.svg);
+    animation: background alternate;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-duration: 16s;
+    animation-delay: 3s;
+    display: flex;
+    flex-direction: column;
+    background-position: center;
+    background-size:cover;
+    background-repeat: no-repeat;
+    width: 1282px;
+    height: 720.48px;
+    border-radius: 105px;
+    padding: 15px 120px;
+}
+@keyframes background{
+    0%{background-image: url(../components/images/background1.svg);}
+    50%{background-image: url(../components/images/background2.svg);}
+    100%{background-image: url(../components/images/background3.svg);}
+}
+    /* Navegação */
+.cabecalho{
+    font-family: 'Titan One', cursive;
+    font-weight: 300;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content:flex-end;
+    gap: 40px;
+    text-shadow: 0px 2px 5px #000000;
+    margin-right: 25px;
+
+}
+.cabecalho-logo{
+    justify-content: flex-start;
+    margin-right: 220px;
+}
+.cabecalho-imagem{
+    height: 85px;
+    cursor: pointer;
+}
+.cabecalho-menu{
+    display: flex;
+    gap: 58px;
+    align-items: center;
+}
+.cabecalho-menu-item{
+    color: white;
+    cursor: pointer;
+    font-size: 22px;
+}
+.cabecalho-menu-item:hover{
+    color: rgb(196, 196, 196);
+    transition: .3s;
+
+}
+.cabecalho-menu-conta{
+    padding: 10px 35px;
+    background: linear-gradient(176.83deg, #32CDD3 22.52%, #E43098 74.38%);
+    border: 2px solid #FFFFFF;
+    box-shadow: 0px 0px 22px rgba(0, 0, 0, 0.65);
+    border-radius: 13px;
+    color: #F4F4F4;
+    font-family: 'Titan One', cursive;
+    font-weight: 100;
+    font-style: normal;
+    font-size: 24px;
+    cursor: pointer;
+}
+.cabecalho-menu-conta:hover{
+    color: rgb(196, 196, 196);
+    border: 2px solid rgb(196, 196, 196);
+    transition: .3s;
+    
+}
+    /* Conteúdo */
+.conteudo{
+    color: white;
+    display: flex;
+    padding-top: 100px;
+    text-shadow: 0px 2px 5px #000000;
+}
+.conteudo-principal-imagem{
+    margin-left: 8px;
+}
+.conteudo-principal-escrito, .conteudo-principal-acao{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-left: 17px;
+}
+.conteudo-principal-escrito{
+    font-family: 'Asap', sans-serif;
+    margin-left: 25px;
+    font-size: 18px;
+    line-height: 23px;
+    color: #FFFFFF;
+    text-shadow: 0px 3px 4px #000000;
+}
+.conteudo-principal-botao{
+    color: white;
+    font-family: 'Titan One', cursive;
+    font-style: normal;
+    font-size: 22px;
+    padding: 16px 28px;
+    background: #32CDD3;
+    border-radius: 30px;
+    border: 4px solid #FAFAFA;
+    cursor: pointer;
+    margin-top: 8px;
+    margin-left: 4px;
+}
+.conteudo-principal-botao:hover{
+    background-color: #27acb1;
+    transition: .3s;
+}
+    /* Rodapé */
+.rodape{
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 0px;
+    margin-right: 17px;
+    padding-top: 144px;
+}
+.rodape-imagem{
+    cursor: pointer;
+}
+    /* Rodapé Informações 1 */
+.informacoes{
+    background-color: #1B191E;
+    margin-top: 33px;
+    font-family: "Graphik LCG Web", Brutal_Regular, "Open Sans", arial;
+}
+.informacoes-comeco{
+    display: flex;
+    flex-direction: row;
+    padding-top: 25px;
+    padding-left: 80px;
+    padding-bottom: 15px;
+    align-items: center;
+}
+.direitos{
+    display: flex;
+    color: rgb(235, 235, 235);
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 22px;
+}
+.livre{
+    display: flex;
+    flex-direction: column;
+    margin-left: 267px;
+    align-items: center;
+}
+.livre-brasil{
+    color: rgb(96, 233, 255);
+    font-size: 8px;
+    margin-top: 3px;
+}
+.informacoes-importantes{
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+    font-size: 16px;
+    padding-left: 80px;
+    padding-bottom: 35px;
+}
+.termos, .politica, .licença{
+    color: white;
+}
+.termos:hover, .politica:hover, .licença:hover{
+    color: rgb(96, 233, 255);
+    transition: .3s;
+}
+.hr{
+    display: flex;
+    flex-direction: row;
+    border: solid #404040 1px;
+    margin: 0px 76px;
+}
+    /* Rodapé Informações 2 */
+.links{
+    display: flex;
+    padding-top: 35px;
+    padding-left: 80px;
+    padding-bottom: 10px;
+    font-size: 16px;
+    gap: 25px;
+}
+.links1{
+    display: flex;
+    flex-direction: column;
+}
+.links2{
+    display: flex;
+    flex-direction: column;
+}
+.link-inicio, .link-temporada, .link-temporadas-anteriores, .link-passe, .link-noticias, .link-baixe, .link-suporte, .link-diretrizes{
+    color: white;
+    margin-bottom: 15px;   
+}
+.link-inicio:hover, .link-temporada:hover, .link-temporadas-anteriores:hover, .link-passe:hover, .link-noticias:hover, .link-baixe:hover, .link-suporte:hover, .link-diretrizes:hover{
+    color: rgb(96, 233, 255);
+    transition: .3s;
+}
+    /* Barra de Rolagem */
+::-webkit-scrollbar{
+    width: 13px;
+    background-color: rgba(0, 0, 0, 0.0);
+    border: 0px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: #404040;
+    border-radius: 5px;
+    border: 2px solid #404040;
+}
